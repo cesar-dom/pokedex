@@ -33,18 +33,10 @@ const Navbar = () => {
             <input onChange={onChangeHandler} type="text" placeholder="Search Pokémon" className="bg-white py-2 px-6 rounded-full w-96" />
           </div>
           <div>
-            <button onClick={onButtonClickHandler} className="text-2xl p-4 rounded-full text-white hover:text-indigo-800"><i class="uil uil-search" /></button>
+            <button onClick={onButtonClickHandler} className="text-2xl p-4 rounded-full text-white hover:text-indigo-800"><i className="uil uil-search" /></button>
           </div>
         </div>
-
       </div>
-      {pokemon &&
-        <div>
-          <h1>Acertô! É o {pokemon.name}!</h1>
-          <h3>{pokemon.types[0].type.name}!</h3>
-          <img src={pokemon.sprites.front_default} alt={pokemon.name} />
-        </div>
-      }
     </>
   )
 
